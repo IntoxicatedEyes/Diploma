@@ -1,0 +1,36 @@
+ '''
+#Из задания 1 для моей дипломной работы может пригодиться функция нахождения нахождения среднего значения. (Среднее (mean) = сумма / количество)
+sample = [4, 8, 15, 16, 23, 42]
+def mean(values: list[float]) -> float:
+    """Среднее арифметическое. Требует непустой список."""
+    if len(values) == 0:
+      print(('Введите данные в список'))
+      my_input = float(input())
+      values = [float(my_input)]
+    elif len(values) >= 1:
+      return sum(values) / len(values)
+    # : проверьте пустой список и верните sum(values)/len(values)
+    raise NotImplementedError("implement mean")
+
+print("mean =", mean(sample))
+'''
+'''
+#Из задания 1 для моей дипломной работы может пригодиться функция выведения отчета. 
+
+def describe(values: list[float]) -> dict:
+    """Короткое описание выборки (как мини-отчёт)."""
+    #  верните dict c ключами n/min/max/mean/median/std (std только если len>=2)
+    return {
+       # 'n': len(values),
+       # 'min': min(values),
+       # 'max': max(values),
+      #  'mean': mean(values),
+      #  "median": median(values),
+      #  "std": std_sample(values) if len(values) >= 2 else None,
+    }
+    raise NotImplementedError("implement describe")
+
+print("describe(sample) =", describe(sample))
+print("describe(sample_out) =", describe(sample_out))
+
+'''

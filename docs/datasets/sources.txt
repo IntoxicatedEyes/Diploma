@@ -1,0 +1,142 @@
+# Dataset Sources / Источники датасетов
+# For attribution and license compliance / Для указания авторства и соблюдения лицензий
+
+===============================================================================
+1. Base Mendeley Dataset (7 columns) / Базовый датасет Mendeley (7 колонок)
+===============================================================================
+
+Title / Название:
+    Dataset for classifying English words into difficulty levels by
+    undergraduate and postgraduate students
+
+Author / Автор:
+    Nisar Kangoo (Lovely Professional University, Faculty of Technology and Sciences)
+
+DOI:
+    10.17632/p2wrs7hm4z.6
+
+Publication date / Дата публикации:
+    April 22, 2025 (Version 6) / 22 апреля 2025 г. (версия 6)
+
+License / Лицензия:
+    CC BY 4.0 (Creative Commons Attribution 4.0 International)
+    Permitted: copying, distribution, modification, and any use with attribution.
+    Разрешено: копирование, распространение, изменение и использование
+    при условии указания авторства.
+
+URL / Ссылка:
+    https://data.mendeley.com/datasets/p2wrs7hm4z/6
+
+File in repository / Файл в репозитории:
+    data/datasets/mendeley_7cols.xlsx
+
+Description / Описание:
+    5,368 unique English words with parameters:
+    5 368 уникальных английских слов с параметрами:
+    - word: the word / слово
+    - fre: frequency in corpus / частота в корпусе
+    - len: word length / длина слова
+    - ps: part of speech / часть речи
+    - level: difficulty level (0/1) / уровень сложности (0/1)
+    - difficult_ug: number of undergraduate students who marked it difficult /
+      количество студентов бакалавриата, отметивших слово как сложное
+    - difficult_pg: number of postgraduate students who marked it difficult /
+      количество студентов магистратуры, отметивших слово как сложное
+
+Citation / Цитирование:
+    Kangoo, N. (2025). Dataset for classifying English words into difficulty
+    levels by undergraduate and postgraduate students, Version 6. Mendeley Data.
+    DOI: 10.17632/p2wrs7hm4z.6
+
+===============================================================================
+2. Enriched Dataset (27 columns) / Обогащённый датасет (27 колонок)
+===============================================================================
+
+Title / Название:
+    English Word Linguistic Features Dataset (enriched version) /
+    Англоязычный датасет лингвистических признаков (обогащённая версия)
+
+Author of composite dataset / Автор составного датасета:
+    Not specified. Compiled from open linguistic resources.
+    Не указан. Составлен из открытых лингвистических ресурсов.
+
+Source of difficulty labels / Источник меток сложности:
+    Kangoo, N. (2025). Mendeley Data. DOI: 10.17632/p2wrs7hm4z.6
+
+Additional feature sources / Дополнительные источники признаков:
+
+    | Feature / Признак          | Source / Источник                     | License / Лицензия    |
+    |----------------------------|---------------------------------------|-----------------------|
+    | semantic features /        | WordNet (Princeton University)        | CC BY-SA 3.0          |
+    | семантические признаки     |                                       |                       |
+    | POS, stopwords /           | NLTK (Natural Language Toolkit)       | Apache 2.0            |
+    | части речи, стоп-слова     |                                       |                       |
+    | polarity, subjectivity /   | TextBlob / VADER                       | MIT                   |
+    | полярность, субъективность |                                       |                       |
+    | frequencies (IDF, TF-IDF) /| BNC / COCA (estimated)                | see note / см. примеч.|
+    | частоты                    |                                       |                       |
+    | entropy, phonetics /       | algorithmically computed /            | —                     |
+    | энтропия, фонетика         | вычислено алгоритмически              |                       |
+
+License of composite dataset / Лицензия составного датасета:
+    Not specified. For non-commercial use, attribution of all components is required.
+    For commercial use, check WordNet (CC BY-SA requires open derivatives) and
+    frequency corpus licenses.
+    Не указана. Для некоммерческого использования требуется указание всех
+    компонентов. Для коммерческого использования проверьте лицензии WordNet
+    (CC BY-SA требует открытия производных данных) и частотных корпусов.
+
+File in repository / Файл в репозитории:
+    data/datasets/enriched_27cols.csv
+
+Size / Объём:
+    4,822 words (filtered from 5,368 original) /
+    4 822 слова (отфильтровано из 5 368 исходных)
+
+Detailed passports / Подробные паспорта:
+    - docs/datasets/mendeley_passport.md
+    - docs/datasets/enriched_passport.md
+
+Attribution (recommended) / Атрибуция (рекомендуемый текст):
+    The enriched dataset is based on data by Nisar Kangoo (2025) and enhanced with
+    features from WordNet (Princeton University), NLTK, TextBlob, and computed
+    parameters (entropy, phonetic complexity, Flesch Reading Ease).
+    Обогащённый датасет основан на данных Nisar Kangoo (2025) и дополнен
+    признаками из WordNet (Princeton University), NLTK, TextBlob, а также
+    вычисленными параметрами (энтропия, фонетическая сложность, индекс Флеша).
+
+===============================================================================
+3. License Notes / Примечания по лицензиям
+===============================================================================
+
+WordNet (Princeton University):
+    License: CC BY-SA 3.0.
+    Attribution required: "WordNet 3.0, Princeton University".
+    Лицензия: CC BY-SA 3.0.
+    Указание авторства: "WordNet 3.0, Princeton University".
+
+BNC / COCA:
+    If frequency data comes from these corpora, commercial use requires a separate
+    license. For academic/non-commercial projects, statistical use is permissible.
+    Если частоты взяты из этих корпусов, для коммерческого использования
+    требуется отдельная лицензия. Для учебных/некоммерческих проектов
+    использование статистических данных допустимо.
+
+Recommendation / Рекомендация:
+    For publication (thesis, article), cite all sources. For commercial product,
+    replace frequency data with open alternatives (Google Ngrams, Open Subtitles)
+    or obtain proper licenses.
+    При публикации результатов (диплом, статья) обязательно указать все
+    источники. При коммерциализации продукта — заменить частотные данные на
+    открытые (Google Ngrams, Open Subtitles) или получить лицензию.
+
+===============================================================================
+4. Contact / Контактная информация
+===============================================================================
+
+Project repository / Репозиторий дипломного проекта:
+    https://github.com/IntoxicatedEyes/Diploma
+
+
+Diploma author / Автор дипломного проекта:
+    [Julia Jukova / Юлия Жукова]
